@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Input from './form-components/Input';
 
 function App() {
+  const arrays = ["name","email","age"];
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Input label="First Name: " name="fname"/>
+      <Input label="Last Name: " name="lname"/>
+      <Input label="Age: " name="age"/>
+      <Input label={"E-mail"} name="email"/>
     </div>
   );
 }
