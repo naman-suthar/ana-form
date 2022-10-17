@@ -1,17 +1,19 @@
-import './App.css';
-import Input from './form-components/Input';
+import "./App.css";
+
+import Forms from "./components/Forms";
 
 function App() {
-  const arrays = ["name","email","age"];
+  const arrays = ["name", "email", "age"];
   return (
-    
-    <div className="App">
-      
-      <Input label="First Name: " name="fname"/>
-      <Input label="Last Name: " name="lname"/>
-      <Input label="Age: " name="age"/>
-      <Input label={"E-mail"} name="email"/>
-    </div>
+    <>
+      <div className="app">
+        <form action="">
+          <h1>Forms-Validation</h1>
+          <Forms placeholder="FirstName" />
+          <button>Submit</button>
+        </form>
+      </div>
+    </>
   );
 }
 
